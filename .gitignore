@@ -1,0 +1,7 @@
+src.mk
+config.h
+api
+dft
+kernel
+rdft
+reodft
