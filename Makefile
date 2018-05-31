@@ -1,9 +1,11 @@
-ALL_MK_FILES := inc.mk src.mk test_src.mk libbench2_src.mk threads_src.mk
+ALL_MK_FILES := src.mk inc.mk test_src.mk libbench2_src.mk threads_src.mk
+
+.PHONY: all
 
 all: $(ALL_MK_FILES)
 
 src.mk:
-	python mklinks.py ../
+	python mklinks.py ../ && \
 	find . -name '*.c' -a ! -path './tests/*' -a ! -path './libbench2/*' -a ! -path './threads/*'\
 	| xargs echo LOCAL_SRC_FILES ':=' > src.mk
 

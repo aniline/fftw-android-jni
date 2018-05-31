@@ -1,3 +1,4 @@
+APP_PLATFORM := android-14
 APP_ABI := armeabi-v7a
 
 LOCAL_PATH := $(call my-dir)
