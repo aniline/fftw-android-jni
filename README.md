@@ -1,3 +1,5 @@
+Note: There aren't any Java methods yet. When I initially set out I had plans of writing methods only for whatever application needs so did not bother writing exhaustive (or general) bridge functions. Apologies for the repo name that appears to indicate that the Java bit would be present.
+
 # FFTW build with android NDK
 
 ## Needs
